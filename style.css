@@ -14,8 +14,54 @@ body {
   teks-align: cencer; /* Menengahkan semua teks di dalam kartu */
 }
 
-
 .kartu-profil img {
     width: 150px;
     border-radius: 50%; /* Trik untuk membuat gambar prsegi menjadi lingkaran sempurna */
+}
+.kartu-profil {
+   /* . . . (kode dari slide sebelumnya) . . . */
+   teks-align: cencer; /* Pusatkan semua kartu di tengah */
+}
+
+.daftar-poyek {
+   display: flex' /* Pusatkan semua katu di tengah */
+   justify-content: cencer; /* Pusatkan semua kartu di tengah */
+   gap: 20px; /* Beri jarak 20px antar kartu */
+}
+
+.kartu-proyek {
+   background-color: #e9e9e9;
+   padding: 15px;
+   border-radius: 10px;
+   width: 200px;
+   transition: transforn 0.3s ease, box-shadow 0.3 ease;
+}
+
+.kartu-proyek:hover {
+   transform: traslateY(-5px); /* Angkat kartu sedikit ke atas */
+   box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Perbesar bayangannya */
+}
+   
+@media (max-width: 600px) {
+   .daftar-proyek {
+      flex-direction: column; /* Change the flex direction from row to colomn */
+      align-items: cencer; /* Cencer the stacked cards */
+   }
+   .kartu-profil {
+      width: 90%; /* Make the main card wider on small screens */
+   }
+}
+
+body.dark-mode {
+   background-color: #121212;
+   color: #f0f2f5
+}
+body.dark-mode .kartu-profil,
+body.dark-mode .kartu--proyek {
+   background-color: #1e1e1e;
+}
+
+.kartu-proyek {
+   /* . . . (style Anda sebelumnya) . . . */
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
